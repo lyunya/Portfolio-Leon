@@ -220,8 +220,8 @@ nav {
   font-weight: 400;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 6s steps(27);
-  width: 27ch;
+  animation: typing 6s steps(25), blink 1s ease-in-out 7s infinite;
+  width: 25ch;
   margin: auto;
   border-right: 4px solid rgba(255, 255, 255, 1);
 }
@@ -236,6 +236,15 @@ nav {
   }
 }
 
+@keyframes blink {
+  0% {
+    border-right: 4px solid rgba(255, 255, 255, 0);
+  }
+  100% {
+    border-right: 4px solid rgb(194, 194, 194);
+  }
+}
+
 .main-message h3 {
   font-size: 4rem;
   margin: 1rem 0;
@@ -246,6 +255,7 @@ nav {
     rgba(102, 51, 153, 1) 100%
   );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -279,13 +289,13 @@ nav {
   background-color: rgb(189, 72, 0);
 }
 
-.scroll-down i{
-    color: #fafafa;
-    transition: 650ms;
-    margin-top: 2rem;
-    font-size: 3.5rem;
+.scroll-down i {
+  color: #fafafa;
+  transition: 650ms;
+  margin-top: 2rem;
+  font-size: 3.5rem;
 }
 
-.scroll-down i:hover{
-    color: rgb(189, 72, 0);
+.scroll-down i:hover {
+  color: rgb(189, 72, 0);
 }
