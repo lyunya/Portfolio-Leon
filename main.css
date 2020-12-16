@@ -329,7 +329,7 @@ nav {
 }
 
 .about-text-box h2{
-    font-size: 4rem;
+    font-size: 2.9rem;
     margin-bottom: 20px;
 }
 
@@ -350,3 +350,10 @@ hr{
     border:  0;
     height: 1px;
 }
+
+@media (min-width:600px)  { 
+    .about-text-box h2{
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+ }
