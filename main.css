@@ -303,7 +303,7 @@ nav {
 /* About */
 .about{
     width: 100%;
-    min-height: 100vh;
+    min-height: 60vh;
     max-width: 70rem;
     margin: auto;
 }
@@ -311,7 +311,7 @@ nav {
 .about .container{
     display: flex;
     align-items: center;
-    min-height: 80vh;
+    min-height: 60vh;
 }
 
 .about-img img{
@@ -361,3 +361,116 @@ hr{
         font-size: 4rem;
     }
  }
+
+ /* Projects */
+
+ .projects{
+   padding: 3rem 0;
+   min-height: 100vh;
+   max-width: 70rem;
+   margin: auto;
+ }
+
+ .title-heading {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.title-heading h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+ .has-margin-right{
+   margin: 0 3rem 0 0;
+ }
+
+ .project-item{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 1.45rem 5rem 1.45rem;
+ }
+
+ .project-img{
+   flex: 1;
+ }
+
+ .project-description{
+   flex: 1;
+ }
+
+ .project-description h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+  background: linear-gradient(
+    to right,
+    rgba(249, 105, 14, 1) 0%,
+    rgba(102, 51, 153, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+ .project-description p{
+   font-family: "Poppins", sans-serif;
+   font-size: 1.4rem;
+ }
+
+ .project-link{
+   display: inline-block;
+   margin: 2rem 1rem;
+   font-size: 1.4rem;
+ }
+
+ /* Contact */
+ .contact {
+  width: 100%;
+  max-width: 70rem;
+  margin: auto;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.contact p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 0.9rem 2rem;
+}
+
+.contact .container {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  max-width: 70rem;
+  margin: auto;
+  padding: 2.5rem;
+  color: #8a8a8a;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+footer a {
+  margin: 0 0.2rem;
+}
+
+.footer-coded-by {
+  margin: 2rem 0;
+}
